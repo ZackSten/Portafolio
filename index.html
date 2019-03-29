@@ -1,25 +1,28 @@
 <!DOCTYPE html>
+<html lang="es">
 <html>
     <head>
+        <meta charset="UTF-8"/>
         <title>Hola soy Pablo Benedix</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
     <body>
         <header>
             <div>
                 <figure>
-                    <img> logo
+                    <img src="images/logo.png" alt="Logo de http://pablobenedix.com"/>
                 </figure>
             
             <nav>
                 <ol>
                     <li>
-                        <a>Portafolio</a>
+                        <a href="#">Portafolio</a>
                     </li>
                     <li>
-                        <a>Experiencia</a>
+                        <a href="#">Experiencia</a>
                     </li>
                     <li>
-                        <a>Trabajemos juntos</a>
+                        <a href="#">Trabajemos juntos</a>
                     </li>
                 </ol>
             </nav>
@@ -30,7 +33,7 @@
                 Hola! Soy <strong>Pablo Benedix</strong> <br/> Desarrollador <strong> Front-End</strong> y <br/>Estudiante de <strong>Platzi</strong>
             </h1>
         </section>
-        <img>imagen de portada
+        <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
         <section>
             <h2>Portafolio (Proyectos Destacados)</h2>
             <article>
@@ -38,21 +41,28 @@
                 <h6>React Native / React</h6>
                 <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
                 <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-                <p>Platzi Video no me corresponde a mi, sino a Leonidas Esteban</p>
+                <p>En Invie te vendo las mejores guitarras Invie-sibles del mundo!</p>
+                <img src="images/invie.png" alt="proyecto del curso de GitHub" width="500">
             </article>
         </section>
         <section>
             <h2>Más sobre mi experiencia</h2>
             <article>
                 <figure>
-                    <img/>
+                    <img src="images/ruinaventura.jpg" width="500" />
                 </figure>
                 <h3>PlatziConf México 2018</h3>
                 <p>El evento más grande sobre gente que quiere aprender más de internet.</p>
                 <a>Ver Plática</a>
             </article>
         </section>
-        <section>sección contacto</section>
+        <section>
+            <form action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="email" placeholder="Déjame tu email" id="email"/>
+                <button>Enviar</button>
+            </form>
+        </section>
         <footer>footer</footer>
     </body>
 </html>
