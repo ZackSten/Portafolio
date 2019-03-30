@@ -6,69 +6,66 @@
         <title>Hola soy Pablo Benedix</title>
         <link rel="icon" type="image/png" href="images/favicon.png">
         <link rel="stylesheet" href="css/styles.css">
-        <style>
-            header {
-                background: green;
-            }
-        </style>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="images/logo.PNG" alt="Logo de http://pablobenedix.com"/>
                 </figure>
             
-            <nav>
+            <nav class="menu">
                 <ol>
                     <li>
-                        <a href="#portafolio">Portafolio</a>
+                        <a class="link" href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#eventos">Experiencia</a>
+                        <a class="link" href="#eventos">Experiencia</a>
                     </li>
                     <li>
-                        <a href="#contacto">Trabajemos juntos</a>
+                        <a class="link" href="#contacto">Trabajemos juntos</a>
                     </li>
                 </ol>
             </nav>
         </div>
         </header>
-        <section >
+        <section class="hero">
             <h1>
                 Hola! Soy <strong>Pablo Benedix</strong> <br/> Desarrollador <strong> Front-End</strong> y <br/>Estudiante de <strong>Platzi</strong>
             </h1>
         </section>
         <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
-        <section id="portafolio">
+        <section id="portafolio" class="portfolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
-            <article>
-                <h3>Platzi Video</h3>
-                <h6>React Native / React</h6>
-                <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                <p><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
-                <p>En Invie te vendo las mejores guitarras Invie-sibles del mundo!</p>
-                <img src="images/invie.png" alt="proyecto del curso de GitHub" width="500">
+            <article class="project">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-name">React Native / React</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                <p class="project-description">En Invie te vendo las mejores guitarras Invie-sibles del mundo!</p>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="images/invie.png" alt="proyecto del curso de GitHub" width="500">
+                </figure>
             </article>
         </section>
-        <section id="eventos">
+        <section id="eventos" class="event">
             <h2>Más sobre mi experiencia</h2>
-            <article>
-                <figure>
+            <article class="event-imageContainer">
+                <figure class="event-image">
                     <img src="images/ruinaventura.jpg" width="500" />
                 </figure>
-                <h3>PlatziConf México 2018</h3>
-                <p>El evento más grande sobre gente que quiere aprender más de internet.</p>
-                <a>Ver Plática</a>
+                <h3 class="event-title">PlatziConf México 2018</h3>
+                <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                <a class="event-url">Ver Plática</a>
             </article>
         </section>
-        <section id="contacto">
-            <form action="/suscripcion/">
+        <section id="contacto" class="form">
+            <form action="/suscripcion/" class="form-email">
                 <h3>¿Creamos algo juntos?</h3>
                 <input type="email" placeholder="Déjame tu email" id="email"/>
                 <button>Enviar</button>
             </form>
         </section>
-        <footer>footer</footer>
+        <footer class="footer">footer</footer>
     </body>
 </html>
