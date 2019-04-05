@@ -48,7 +48,7 @@ h1 strong {
     height: 300px;
     background-image: url('../images/hero.jpg');
     background-color: #1b2127;
-    background-size: 500px 300px;
+    background-size: 540px;
     background-repeat: no-repeat;
     background-position-x: right;
 
@@ -85,9 +85,42 @@ h1 strong {
 .header {
     background-color: black;
     color: white;
+    display: flex;
+    height: 135px;
+    justify-content: space-between;
+}
+
+.menu {
+    height: inherit;
+}
+
+ol,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
 }
 
 .header a{
    color: white; 
    text-decoration: none;
+}
+
+.header ol {
+    height: inherit;
+    display: flex;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
 }
