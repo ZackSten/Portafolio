@@ -9,46 +9,39 @@
         <link rel="stylesheet" href="css/styles.css"> 
     </head>
     <body>
-        <div class="flexbox">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
         <header class="header">
-             <figure class="logo">
-                 <img src="images/logo.png" alt="Logo de http://pablobenedix.com" height="50"/>
-             </figure>
-            
-        <nav class="menu">
-             <ol>
-                 <li>
-                     <a class="link" href="#portafolio">Portafolio</a>
-                 </li>
-                 <li>
-                     <a class="link" href="#eventos">Experiencia</a>
-                 </li>
-                 <li>
-                     <a class="link" href="#contacto">Trabajemos juntos</a>
-                </li>
-            </ol>
-        </nav>
+            <div class="container">
+                <figure class="logo">
+                            <img src="images/logo.png" alt="Logo de http://pablobenedix.com" height="50"/>
+                </figure>
+                       
+                <nav class="menu">
+                    <ol>
+                        <li>
+                            <a class="link" href="#portafolio">Portafolio</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#eventos">Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contacto">Trabajemos juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
         </header>
         <section class="hero">
-            <h1>
-                Hola! Soy <strong>Pablo Benedix</strong> <br/> Desarrollador <strong> Front-End</strong> y <br/>Estudiante de <strong>Platzi</strong>
-            </h1>
+            <div class="container">
+                <h1>
+                    Hola! Soy <strong>Pablo Benedix</strong> <br/> Desarrollador <strong> Front-End</strong> y <br/>Estudiante de <strong>Platzi</strong>
+                </h1>
+                <img class-hero="hero-image" src="images/hero.jpg" width="300" height="300"  alt="imagen principal del sitio">
+            </div>
         </section>
-        <!-- <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> -->
         <section id="portafolio" class="portfolio">
-            <h2>Portafolio (Proyectos Destacados)</h2>
-            <article class="project">
+            <div class="container">
+                    <h2>Portafolio (Proyectos Destacados)</h2>
+                <article class="project">
                 <div class="project-details">
                     <h3 class="project-title">Platzi Video</h3>
                     <h6 class="project-name">React Native / React</h6>
@@ -72,61 +65,66 @@
                     <img class="project-image" src="images/invie.png" alt="proyecto del curso de GitHub" width="500">
                 </figure>
             </article>
+            </div>
         </section>
         <h2 class="event-list-title">Más sobre mi experiencia</h2>
         <section id="eventos" class="event-list">
-            <article class="event">
-                <figure class="event-image">
-                    <img src="images/ruinaventura.jpg" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">PlatziConf México 2018</h3>
-                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
-                    <a class="event-url">Ver Plática</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-image">
-                    <img src="images/ruinaventura.jpg" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">PlatziConf México 2018</h3>
-                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
-                    <a class="event-url">Ver Plática</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-image">
-                    <img src="images/ruinaventura.jpg" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">PlatziConf México 2018</h3>
-                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
-                    <a class="event-url">Ver Plática</a>
-                </div>
-            </article>
-            <article class="event">
-                <figure class="event-image">
-                    <img src="images/ruinaventura.jpg" width="500" />
-                </figure>
-                <div class="event-detail">
-                    <h3 class="event-title">PlatziConf México 2018</h3>
-                    <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
-                    <a class="event-url">Ver Plática</a>
-                </div>
-            </article>
+            <div class="container">
+                <article class="event">
+                    <figure class="event-image">
+                        <img src="images/ruinaventura.jpg" width="500" />
+                    </figure>
+                    <div class="event-detail">
+                        <h3 class="event-title">PlatziConf México 2018</h3>
+                        <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                        <a class="event-url">Ver Plática</a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event-image">
+                        <img src="images/ruinaventura.jpg" width="500" />
+                    </figure>
+                        <div class="event-detail">
+                        <h3 class="event-title">PlatziConf México 2018</h3>
+                        <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                        <a class="event-url">Ver Plática</a>
+                        </div>
+                    </article>
+                    <article class="event">
+                        <figure class="event-image">
+                            <img src="images/ruinaventura.jpg" width="500" />
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">PlatziConf México 2018</h3>
+                            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                            <a class="event-url">Ver Plática</a>
+                        </div>
+                    </article>
+                    <article class="event">
+                        <figure class="event-image">
+                            <img src="images/ruinaventura.jpg" width="500" />
+                        </figure>
+                        <div class="event-detail">
+                            <h3 class="event-title">PlatziConf México 2018</h3>
+                            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet.</p>
+                            <a class="event-url">Ver Plática</a>
+                        </div>
+                    </article>
+            </div>
         </section>
         <section id="contacto" class="contact">
-            <form action="/suscripcion/" class="contact-email">
-                <h3>¿Creamos algo juntos?</h3>
-                <input type="email" placeholder="Déjame tu email" id="email"/>
-                <button>Enviar</button>
-            </form>
+            <div class="container">
+                <form action="/suscripcion/" class="contact-email">
+                    <h3>¿Creamos algo juntos?</h3>
+                    <input type="email" placeholder="Déjame tu email" id="email"/>
+                    <button>Enviar</button>
+                </form>
             <div class="social">
-                <a href="https://twitter.com/peblo_code" class="social-link twitter"></a>
-                <a href="https://facebook.com/pablovilmar.benedixcanete" class="social-link facebook"></a>
-                <a href="https://github.com/ZackSten" class="social-link github"></a>
-                <a href="https://instagram.com/peblo_code" class="social-link instagram"></a>
+                    <a href="https://twitter.com/peblo_code" class="social-link twitter"></a>
+                    <a href="https://facebook.com/pablovilmar.benedixcanete" class="social-link facebook"></a>
+                    <a href="https://github.com/ZackSten" class="social-link github"></a>
+                    <a href="https://instagram.com/peblo_code" class="social-link instagram"></a>
+                </div>
             </div>
         </section>
         <footer class="footer">
@@ -134,7 +132,7 @@
                 <p>Curso de Desarrollo web online 2018 <img src="images/platzi.png" alt="platzi" width="80"> </p>
             </div>
             <div>
-                    <p>Designed with <\3 by <a href="https://twitter.com/thespianartist">@thespianartist</a> </p>
+                <p>Designed with <\3 by <a href="https://twitter.com/thespianartist">@thespianartist</a> </p>
             </div>
         </footer>
     </body>
