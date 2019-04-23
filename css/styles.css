@@ -364,6 +364,21 @@ figure{
 
 /* Desktop First, empezar del MQ mas alto */
 
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed; 
+    z-index: 5;
+    left: 5px;
+    top: 5px;
+    color: white;
+}
+
 @media screen and (max-width: 1024px){
     .hero {
         height: auto;
@@ -387,6 +402,9 @@ figure{
 }
 
 @media screen and (max-width: 767px) {
+    .burger-button{
+        display: block;
+    }
     .header {
         display: block;
         height: auto;
@@ -423,20 +441,6 @@ figure{
     }
     .menu.is-active {
         left: 0;
-    }
-    .burger-button {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: black;
-        display: block;
-        line-height: 40px;
-        text-align: center;
-        position: fixed; 
-        z-index: 5;
-        left: 5px;
-        top: 5px;
-        color: white;
     }
     .project {
         display: block;
