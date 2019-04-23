@@ -11,6 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
         <header class="header">
             <div class="container">
                 <figure class="logo">
@@ -131,10 +132,10 @@
                     <button>Enviar</button>
                 </form>
             <div class="social">
-                    <a href="https://twitter.com/peblo_code" class="social-link twitter" target="_blank"></a>
-                    <a href="https://facebook.com/pablovilmar.benedixcanete" class="social-link facebook" target="_blank"></a>
-                    <a href="https://github.com/ZackSten" class="social-link github" target="_blank"></a>
-                    <a href="https://instagram.com/peblo_code" class="social-link instagram" target="_blank"></a>
+                    <a href="https://twitter.com/peblo_code" class="icon-twitter" target="_blank"></a>
+                    <a href="https://facebook.com/pablovilmar.benedixcanete" class="icon-facebook" target="_blank"></a>
+                    <a href="https://github.com/ZackSten" class="icon-github" target="_blank"></a>
+                    <a href="https://instagram.com/peblo_code" class="icon-instagram" target="_blank"></a>
                 </div>
             </div>
         </section>
@@ -143,8 +144,26 @@
                 <p>Curso de Desarrollo web online 2018 - Curso de Responsive Design<img src="images/platzi.png" alt="platzi" width="80"> </p>
             </div>
             <div>
-                <p>Designed with ❤️ by <a href="https://twitter.com/thespianartist" target="_blank">@thespianartist</a> </p>
+                <p>Designed with ❤️ by <a href="https://twitter.com/thespianartist" target="_blank">@thespianartist</a><br> Developed by <a href="https://twitter.com/peblo_code" target="_blank">@peblo_code</a></p>
             </div>
         </footer>
+        <script>
+            console.log(document.querySelector('.menu'));
+
+            const menu = document.querySelector('.menu');
+            const burgerButton = document.querySelector('#burger-menu');
+
+            burgerButton.addEventListener('click', hideShow)
+
+            function hideShow() {
+                if (menu.classList.contains('is-active')) {
+                    menu.classList.remove('is-active');
+                }
+                else {
+                    menu.classList.add('is-active');
+                }
+
+            }
+        </script>
     </body>
 </html>
