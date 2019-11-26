@@ -1,4 +1,4 @@
-<p align="center">![](https://zacksten.github.io/images/logo.png)</p>
+<p align="center"><img src="https://zacksten.github.io/images/logo.png"></p>
 
 ------------
 **English:**
